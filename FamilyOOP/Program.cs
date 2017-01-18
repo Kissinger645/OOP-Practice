@@ -10,7 +10,32 @@ namespace FamilyOOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("testing");
+            Kids Ty = new Kids("Tyler");
+            Kids Julia = new Kids("Julia");
+            Kids Mia = new Kids("Mia");
+            Parents Bob = new Parents("Bobby");
+            Parents Liz = new Parents("Elizabeth");
+
+            Ty.DoesChore();
+            Ty.TakeNap();
+            Mia.Fights(Julia);
+            Julia.DoesChore();
+            Julia.Fights(Ty);
+            Ty.DoesChore();
+            Ty.TakeNap();
+            Ty.DoesChore();
+            Ty.SpendsMoney();
+            Ty.SpendsMoney();
+            Liz.GetsPaid();
+            Ty.TakeNap();
+            Bob.GoDate(Liz);
+
+            Console.WriteLine(Bob);
+            Console.WriteLine(Liz);
+            Console.WriteLine(Ty);
+            Console.WriteLine(Mia);
+            Console.WriteLine(Julia);
+            Console.ReadLine();
         }
     }
 }
